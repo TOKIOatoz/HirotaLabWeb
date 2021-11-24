@@ -202,3 +202,11 @@ img {
 .to_top_a:hover {
     color: white;
 }
+
+.list_a {
+    color: dimgray;
+}
+
+.list_a:hover {
+    color: slateblue;
+}
