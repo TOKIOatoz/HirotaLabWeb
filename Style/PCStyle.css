@@ -1,7 +1,13 @@
 @charset "UTF-8";
 
 a {
+    color: lightseagreen;
+    font-weight: bold;
     text-decoration: none;
+}
+
+a:hover {
+    color: slateblue;
 }
 
 body {
@@ -26,6 +32,14 @@ hr {
     border: none;
 }
 
+img {
+    margin: 10px;
+    max-width: 350px;
+    min-width: 50px;
+    min-height: 50px;
+
+}
+
 #in_header {
     display: flex;
     justify-content: center;
@@ -38,7 +52,6 @@ hr {
 .div_flex {
     display: flex;
     width: 100%;
-    height: 100%;
 }
 
 #title {
@@ -46,15 +59,17 @@ hr {
 }
 
 .title_ja {
-    font-size: 15px;
-    line-height: 1.5;
-    color: black;
+    font-size: 18px;
+    color: dimgray;
 }
 
 .title_en {
     font-size: 45px;
-    line-height: 1.5;
     color: white;
+}
+
+.title_en:hover {
+    color: rgb(255, 242, 187);
 }
 
 #blank {
@@ -127,4 +142,63 @@ hr {
     font-size: 30px;
     color: dimgray;
     line-height: 1;
+}
+
+.div_flex_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content_detail {
+    flex: 1 1 600px;
+}
+
+.content_image {
+    flex: 1 1 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.content_subtitle {
+    font-size: 23px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.content_text {
+    font-size: 18px;
+}
+
+#to_top {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    width: 5em;
+    height: 2em;
+    background-color: white;
+    border: 3px solid lightseagreen;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+}
+
+#to_top:hover {
+    background-color: lightseagreen;
+}
+
+.to_top_a {
+    display: block;
+    line-height: 2em;
+}
+
+.to_top_a:hover {
+    color: white;
 }
