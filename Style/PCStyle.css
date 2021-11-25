@@ -204,9 +204,12 @@ p {
     font-size: 23px;
     margin-top: 10px;
     margin-bottom: 5px;
+    font-weight: bold;
+    color: dimgray;
 }
 
 .content_text {
+    margin-bottom: 1em;
     font-size: 18px;
 }
 
