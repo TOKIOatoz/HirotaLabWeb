@@ -149,7 +149,7 @@ p {
     height: 10px;
 }
 
-#main {
+#main, footer {
     width: calc(100% - 10px);
 }
 
@@ -213,34 +213,6 @@ p {
     font-size: 18px;
 }
 
-#to_top {
-    position: fixed;
-    bottom: 10px;
-    left: 10px;
-    width: 5em;
-    height: 2em;
-    background-color: white;
-    border: 3px solid lightseagreen;
-    border-radius: 10px;
-    font-size: 20px;
-    font-weight: bold;
-    text-decoration: none;
-    text-align: center;
-}
-
-#to_top:hover {
-    background-color: lightseagreen;
-}
-
-.to_top_a {
-    display: block;
-    line-height: 2em;
-}
-
-.to_top_a:hover {
-    color: white;
-}
-
 .list_a {
     color: dimgray;
 }
@@ -278,4 +250,47 @@ p {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+}
+
+#in_footer {
+    width: calc(100% - 20px);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border-radius: 20px;
+    padding: 15px;
+    color: dimgray;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: right;
+}
+
+#to_top {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    width: 5em;
+    height: 2em;
+    background-color: white;
+    border: 3px solid lightseagreen;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+}
+
+#to_top:hover {
+    background-color: lightseagreen;
+}
+
+.to_top_a {
+    display: block;
+    line-height: 2em;
+}
+
+.to_top_a:hover {
+    color: white;
 }
