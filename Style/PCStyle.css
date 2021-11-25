@@ -255,3 +255,7 @@ p {
 #current_students {
     width: 90%;
 }
+
+.content_detail_access {
+    flex: 0 1 600px;
+}
