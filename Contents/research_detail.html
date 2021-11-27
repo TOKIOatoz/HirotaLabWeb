@@ -733,15 +733,50 @@
                 <div>
                     <!--コンテンツサブタイトル-->
                     <div class="other_content_subtitle">
+                        仮想粘土シミュレーション&nbsp;[2017- ]
                     </div>
                     <!--コンテンツ内容-->
                     <div class="other_content_text">
+                        近年、力覚提示（ハプティクス）とその入力装置の進化により、細かい動作を必要とする場合であっても、まるで実際に体験しているかのように仮想体験を行うことが出来るようになってきています。そこで、陶芸のような粘土物でモノを造形するという体験も仮想空間内で行うことが出来るのではないかと考えました。しかし、このような体験を実現するためには二つの課題があります。一つはリアルタイムに変形する仮想粘土モデルの作成です。粘土のように変形する物体のCGについては様々な研究がされており、これらの研究の多くは視覚的な粘土らしさを表現するために粒子ベースモデルが利用されています。従来の粘土のように柔らかい物体を扱う粒子法は主に自然科学においてシミュレーションなどで用いられています。しかしながらいずれも物理モデルとしての精度に重点を置いており、その場で操作できるプログラムには使われません。本研究ではこのよりシンプルなモデルによって粘土特性の表現が可能であるかを検証しています。これによってリアルタイムにユーザーが操作できるモデルを実現しようとしています。
                     </div>
                     <!--画像-->
                     <div class="other_contents_flex_wrap">
                         <figure class="other_content_figure">
-                            <img src="D:/ドキュメント/GitClone/HirotaLabWeb/ResearchImage/manip1.jpg" alt="">
+                            <img src="D:/ドキュメント/GitClone/HirotaLabWeb/ResearchImage/nendo1.png" alt="写真1">
                             <figcaption>
+                                写真1
+                            </figcaption>
+                        </figure>
+                        <figure class="other_content_figure">
+                            <img src="D:/ドキュメント/GitClone/HirotaLabWeb/ResearchImage/nendo2.png" alt="写真2">
+                            <figcaption>
+                                写真2
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <br>
+                <div>
+                    <!--コンテンツサブタイトル-->
+                    <div class="other_content_subtitle">
+                        IRDMの計測による構築&nbsp;[2010-2012]
+                    </div>
+                    <!--コンテンツ内容-->
+                    <div class="other_content_text">
+                        IRDMを実変形物体の計測にに基づいて構築する手法について検討した。実物体にステップ状の力を作用してこれに対する変形の変化を記録する。空気噴射により力を作用し、ステレオカメラにより変形を計測する。これにより得られるステップ応答から、デコンボリューション処理によりインパルス応答を得る。実験では、ドーム形状と直方体形状のシリコンゴムでできた実物体に対する計測を行った。また、被験者を用いた実験により、実物体とモデルの類似性を検証した。
+                    </div>
+                    <!--画像-->
+                    <div class="other_contents_flex_wrap">
+                        <figure class="other_content_figure">
+                            <img src="D:/ドキュメント/GitClone/HirotaLabWeb/ResearchImage/kesoku1.jpg" alt="計測">
+                            <figcaption>
+                                計測
+                            </figcaption>
+                        </figure>
+                        <figure class="other_content_figure">
+                            <img src="D:/ドキュメント/GitClone/HirotaLabWeb/ResearchImage/kesoku2.jpg" alt="モデルと実物体の比較">
+                            <figcaption>
+                                モデルと実物体の比較
                             </figcaption>
                         </figure>
                     </div>
@@ -751,21 +786,85 @@
                             Video
                         </h4>
                         <div>
-                            <a href="D:/ドキュメント/GitClone/HirotaLabWeb/ResearchVideo/manip1.mp4" download>
+                            <a href="http://www.hirota-lab.sumomo.ne.jp/research/movie/kesoku1.m1v" download>
+                                ドーム
+                            </a>
+                        </div>
+                        <div>
+                            <a href="http://www.hirota-lab.sumomo.ne.jp/research/movie/kesoku2.m1v" download>
+                                直方体
+                            </a>
+                        </div>
+                        <div>
+                            <a href="http://www.hirota-lab.sumomo.ne.jp/research/movie/kesoku3.m1v" download>
+                                変形の比較
                             </a>
                         </div>
                     </div>
                     <!--参考文献-->
                     <ol class="other_content_reference">
                         <li>
+                            Koichi&nbsp;Hirota,&nbsp;Kazuyoshi&nbsp;Tagawa:&nbsp;Acquisition&nbsp;of&nbsp;elastically&nbsp;deformable&nbsp;object&nbsp;model&nbsp;based&nbsp;on&nbsp;measurement;&nbsp;Proc.&nbsp;EuroHaptics&nbsp;2012,&nbsp;205-217,&nbsp;2012&nbsp;(poster)
+                        </li>
+                    </ol>
+                </div>
+                <br>
+                <div>
+                    <!--コンテンツサブタイトル-->
+                    <div class="other_content_subtitle">
+                        インパルス応答変形モデル&nbsp;(IRDM)&nbsp;[2005-2006]
+                    </div>
+                    <!--コンテンツ内容-->
+                    <div class="other_content_text">
+                        弾性仮想物体の動的な変形に伴う力覚表現の実現手法について検討した。インパルス応答変形モデルでは、物体の力に伴う変形をインパルス力に対する時系列的な変形パターンとして記録する。インタラクションに伴う変形は、作用力とインパルス応答とのたたみ込みとして求められる。この手法の利点は、インタラクションに伴う力の計算がモデルの複雑さに直接的には依存しないこと、変形の計算はモデルの複雑さに対して１次のオーダーであることであり、仮想環境における実時間操作の実現に適している。
+                    </div>
+                    <!--画像-->
+                    <div class="other_contents_flex_wrap">
+                        <figure class="other_content_figure">
+                            <img src="D:/ドキュメント/GitClone/HirotaLabWeb/ResearchImage/irdm1.jpg" alt="IRDMの考え方">
+                            <figcaption>
+                                IRDMの考え方
+                            </figcaption>
+                        </figure>
+                        <figure class="other_content_figure">
+                            <img src="D:/ドキュメント/GitClone/HirotaLabWeb/ResearchImage/irdm2.jpg" alt="実時間インタラクション">
+                            <figcaption>
+                                実時間インタラクション
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <!--動画-->
+                    <div>
+                        <h4>
+                            Video
+                        </h4>
+                        <div>
+                            <a href="http://www.hirota-lab.sumomo.ne.jp/research/movie/irdm1.mpeg" download>
+                                立方体モデル
+                            </a>
+                        </div>
+                        <div>
+                            <a href="http://www.hirota-lab.sumomo.ne.jp/research/movie/irdm2.mpeg" download>
+                                ウサギモデル
+                            </a>
+                        </div>
+                    </div>
+                    <!--参考文献-->
+                    <ol class="other_content_reference">
+                        <li>
+                            Kazuyoshi&nbsp;Tagawa,&nbsp;Koichi&nbsp;Hirota,&nbsp;Michitaka&nbsp;Hirose:&nbsp;Impulse&nbsp;Response&nbsp;Deformation&nbsp;Model:&nbsp;an&nbsp;Approach&nbsp;to&nbsp;Haptic&nbsp;Interaction&nbsp;with&nbsp;Dynamically&nbsp;Deformable&nbsp;Object;&nbsp;Proc.&nbsp;Haptics&nbsp;Symposium&nbsp;2006,&nbsp;209-215,&nbsp;2006.3.
+                        </li>
+                        <li>
+                            Kazuyoshi&nbsp;Tagawa,&nbsp;Koichi&nbsp;Hirota,&nbsp;Michitaka&nbsp;Hirose:&nbsp;Manipulation&nbsp;of&nbsp;Dynamically&nbsp;Deformable&nbsp;Object&nbsp;Using&nbsp;Impulse-Based&nbsp;Approach,&nbsp;Advances&nbsp;in&nbsp;Haptics,&nbsp;315-331,&nbsp;InTech,&nbsp;2010
                         </li>
                     </ol>
                 </div>
                 <br>
             </div>
-            <div id="" class="content_main">
+            <div id="body_sensation_and_self_awareness" class="content_main">
                 <!--コンテンツタイトル-->
                 <span class="content_name">
+                    身体感覚と自己認識
                 </span>
                 <hr>
                 <div>
