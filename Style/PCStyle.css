@@ -44,6 +44,13 @@ img {
     min-height: 50rem;
 }
 
+video {
+    max-width: 480rem;
+    min-width: none;
+    max-height: 640rem;
+    min-height: none;
+}
+
 h4 {
     margin-top: 0.5em;
     margin-bottom: 0em;
@@ -300,4 +307,46 @@ footer, #main {
 
 .to_top_a:hover {
     color: white;
+}
+
+/* style of research_detail and news */
+.other_content_subtitle {
+    font-size: 23rem;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+    font-weight: bold;
+    color: dimgray;
+}
+
+.other_content_detail {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.other_content_text {
+    max-width: 1000rem;
+    margin-bottom: 1em;
+    font-size: 18rem;
+}
+
+.other_contents_flex_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.other_content_figure {
+    margin: 0rem;
+    flex: 0 0 100rem;
+    justify-content: center;
+}
+
+.other_video {
+    margin: 5rem;
+    flex: 0 1 auto;
+}
+
+.other_content_reference {
+    font-size: 12rem;
+    margin-bottom: 0rem;
 }
