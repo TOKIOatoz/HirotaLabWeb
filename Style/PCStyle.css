@@ -172,6 +172,7 @@ footer, #main {
 
 .content_name {
     font-size: 30rem;
+    font-weight: bold;
     color: dimgray;
     line-height: 1;
 }
