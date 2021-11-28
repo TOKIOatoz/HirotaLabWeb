@@ -1,5 +1,369 @@
 @charset "UTF-8";
 
+html {
+    overflow-x: hidden;
+    font-size: 0.9px;
+}
+
+a {
+    color: lightseagreen;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    color: slateblue;
+}
+
 body {
-    font-family: "Yu Gothic", "Meiryo", "Hiragino Maru Gothic ProN", sans-serif;
+    word-wrap: break-word;
+    font-family: "Meiryo", "Yu Gothic", "Hiragino Maru Gothic ProN", sans-serif;
+    background-color: lightgrey;
+    font-size: 16rem;
+    margin-top: 0rem;
+    margin-bottom: 8px;
+    margin-left: 8px;
+    margin-right: 8px;
+    width: calc(100vw - 16px);
+}
+
+header {
+    position: fixed;
+    top: 0rem;
+    left: 0rem;
+    display: flex;
+    width: 100%;
+    height: 50rem;
+    background-color: lightseagreen;
+}
+
+hr {
+    height: 3rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    background-color: dimgrey;
+    border: none;
+}
+
+img {
+    margin: 10rem;
+    max-width: calc(100% - 20rem);
+    max-height: calc(100% - 20rem);
+    min-width: none;
+    min-height: none;
+}
+
+video {
+    max-width: 480rem;
+    min-width: none;
+    max-height: 640rem;
+    min-height: none;
+}
+
+h4 {
+    margin-top: 0.5em;
+    margin-bottom: 0em;
+    font-size: 20rem;
+    font-weight: normal;
+}
+
+h5 {
+    margin-top: 0em;
+    margin-bottom: 1em;
+    font-weight: normal;
+}
+
+figure {
+    margin: 10rem;
+    text-align: center;
+}
+
+figcaption {
+    font-size: 15rem;
+    font-weight: bold;
+}
+
+p {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+footer, #main {
+    width: calc(100% - 10rem);
+}
+
+#main {
+    margin-top: 10rem;
+}
+
+#in_header {
+    width: calc(100% - 10rem);
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+
+.div_flex {
+    width: 100%;
+}
+
+#title {
+    height: 100%;
+    margin-left: 0rem;
+    margin-right: 0rem;
+}
+
+.title_ja {
+    font-size: 0rem;
+    color: transparent;
+}
+
+.title_en {
+    position: fixed;
+    top: 0rem;
+    left: 3rem;
+    vertical-align: middle;
+    font-size: 40rem;
+    color: white;
+}
+
+.title_en:hover {
+    color: rgb(255, 242, 187);
+}
+
+#blank_flexbox {
+    width: 100vw;
+    height: 11rem;
+    position: fixed;
+    top: 50rem;
+    left: 0rem;
+    background-color: lightseagreen;
+}
+
+#blank_in {
+    width: calc(100% - 10rem);
+    height: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+}
+
+#content_menu {
+    width: 100vw;
+    position: fixed;
+    top: 61rem;
+    left: 0rem;
+    background-color: lightseagreen;
+    align-items: center;
+}
+
+.content_flexbox_wrap {
+    align-items: center;
+    height: 50%;
+}
+
+.div_flex_content {
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    margin-left: 15rem;
+    text-align: left;
+}
+
+.content_link {
+    display: block;
+    font-size: 28rem;
+    color: white;
+}
+
+.content_link:hover {
+    color: rgb(255, 242, 187);
+}
+
+.content_main {
+    width: calc(100% - 20rem);
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border-radius: 20rem;
+    padding: 15rem;
+}
+
+.content_name {
+    font-size: 30rem;
+    font-weight: bold;
+    color: dimgray;
+    line-height: 1;
+}
+
+.content_name_annotation {
+    margin: 0em;
+    font-size: 25rem;
+}
+
+.div_flex_wrap {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content_detail {
+    color: black;
+}
+
+.content_image {
+    justify-content: center;
+    align-items: center;
+}
+
+.content_image_horizontal {
+    max-width: calc(100% - 20rem);
+}
+
+.content_subtitle {
+    font-size: 23rem;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+    font-weight: bold;
+    color: dimgray;
+}
+
+.content_text {
+    margin-bottom: 1em;
+    font-size: 18rem;
+}
+
+.list_a {
+    color: dimgray;
+}
+
+.list_a:hover {
+    color: slateblue;
+}
+
+.students_flexbox_wrap {
+    flex: 1 1 auto;
+    max-width: 240rem;
+    min-width: 240rem;
+}
+
+#current_students {
+    width: 90%;
+}
+
+.content_detail_access {
+    flex: 0 1 600rem;
+}
+
+#content_image_access {
+    flex: 0 1 100rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#content_image_access_2 {
+    flex: 1 1 100rem;
+    max-width: 840rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#in_footer {
+    width: calc(100% - 20rem);
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border-radius: 20rem;
+    padding: 15rem;
+    color: dimgray;
+    font-size: 10rem;
+    font-weight: bold;
+    text-align: right;
+}
+
+#to_top {
+    position: fixed;
+    bottom: 10rem;
+    right: -200rem;
+    width: 5em;
+    height: 2em;
+    background-color: white;
+    border: 3rem solid lightseagreen;
+    border-radius: 10rem;
+    font-size: 20rem;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+}
+
+#to_top:hover {
+    background-color: lightseagreen;
+}
+
+.to_top_a {
+    display: block;
+    line-height: 2em;
+}
+
+.to_top_a:hover {
+    color: white;
+}
+
+/* style of research_detail and news */
+.other_content_menu {
+    flex: 1 0 450rem;
+    max-width: 500rem;
+}
+
+.other_content_subtitle {
+    font-size: 23rem;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+    font-weight: bold;
+    color: dimgray;
+}
+
+.other_content_detail {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.other_content_text {
+    max-width: 1000rem;
+    margin-bottom: 1em;
+    font-size: 18rem;
+}
+
+.other_contents_flex_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.other_content_figure {
+    margin: 0rem;
+    flex: 0 0 350rem;
+    justify-content: center;
+}
+
+.other_video {
+    margin: 5rem;
+    flex: 0 1 auto;
+}
+
+.other_content_reference {
+    font-size: 12rem;
+    margin-bottom: 0rem;
 }
