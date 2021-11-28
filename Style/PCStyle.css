@@ -337,7 +337,7 @@ footer, #main {
 
 .other_content_figure {
     margin: 0rem;
-    flex: 0 0 100rem;
+    flex: 0 0 200rem;
     justify-content: center;
 }
 
@@ -349,4 +349,5 @@ footer, #main {
 .other_content_reference {
     font-size: 12rem;
     margin-bottom: 0rem;
+    word-wrap: break-word;
 }
