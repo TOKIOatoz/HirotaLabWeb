@@ -39,8 +39,9 @@ hr {
 
 img {
     margin: 10rem;
-    max-width: 350rem;
-    min-width: 50rem;
+    max-width: 400rem;
+    max-height: 400rem;
+    min-width: 100rem;
     min-height: 50rem;
 }
 
@@ -259,7 +260,7 @@ footer, #main {
 
 #content_image_access_2 {
     flex: 1 1 100rem;
-    max-width: 745rem;
+    max-width: 840rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -337,7 +338,7 @@ footer, #main {
 
 .other_content_figure {
     margin: 0rem;
-    flex: 0 0 200rem;
+    flex: 0 0 350rem;
     justify-content: center;
 }
 
