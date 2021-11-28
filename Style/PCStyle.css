@@ -311,6 +311,11 @@ footer, #main {
 }
 
 /* style of research_detail and news */
+.other_content_menu {
+    flex: 1 0 450rem;
+    max-width: 500rem;
+}
+
 .other_content_subtitle {
     font-size: 23rem;
     margin-top: 10rem;
