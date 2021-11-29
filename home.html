@@ -20,7 +20,7 @@
                     <div id="title">
                         <span class="title_ja">
                             <strong>
-                                対話型システム学講座&nbsp;広田研究室
+                                対話型システム学講座&nbsp;広田研究室<br>
                             </strong>
                         </span>
                         <a class="title_en" href="D:/ドキュメント/GitClone/HirotaLabWeb/home.html" target="_self">
@@ -29,77 +29,83 @@
                             </strong>
                         </a>
                     </div>
-                    <div id="blank_flexbox">
-                        <div id="blank_in">
-                        </div>
-                    </div>
-                    <div id="content_menu">
-                        <div class="content_flexbox_wrap">
-                            <div class="div_flex_content">
-                                <div class="content">
-                                    <a class="content_link" href="#introduction">
-                                        <strong>
-                                            Introduction
-                                        </strong>
-                                    </a>
-                                </div>
-                                <div class="content">
-                                    <a class="content_link" href="#research">
-                                        <span>
-                                            <strong>
-                                                Research
-                                            </strong>
-                                        </span>
-                                    </a>
-                                </div>
-                                <div class="content">
-                                    <a class="content_link" href="#member">
-                                        <span>
-                                            <strong>
-                                                Member
-                                            </strong>
-                                        </span>
-                                    </a>
-                                </div>
+                    <div id="hamburger_menu">
+                        <input id="menu_check" type="checkbox">
+                        <label class="menu_button" for="menu_check">
+                            <span></span>
+                        </label>
+                        <div id="blank_flexbox">
+                            <div id="blank_in">
                             </div>
                         </div>
-                        <div class="content_flexbox_wrap">
-                            <div class="div_flex_content">
-                                <div class="content">
-                                    <a class="content_link" href="#lecture">
-                                        <span>
+                        <div id="content_menu">
+                            <div class="content_flexbox_wrap">
+                                <div class="div_flex_content">
+                                    <div class="content">
+                                        <a class="content_link" href="#introduction">
                                             <strong>
-                                                Lecture
+                                                Introduction
                                             </strong>
-                                        </span>
-                                    </a>
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <a class="content_link" href="#research">
+                                            <span>
+                                                <strong>
+                                                    Research
+                                                </strong>
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <a class="content_link" href="#member">
+                                            <span>
+                                                <strong>
+                                                    Member
+                                                </strong>
+                                            </span>
+                                        </a>
+                                    </div>
                                 </div>
-                                <div class="content">
-                                    <a class="content_link" href="#access">
-                                        <span>
-                                            <strong>
-                                                Access
-                                            </strong>
-                                        </span>
-                                    </a>
-                                </div>
-                                <div class="content">
-                                    <a class="content_link" href="#link">
-                                        <span>
-                                            <strong>
-                                                Link
-                                            </strong>
-                                        </span>
-                                    </a>
-                                </div>
-                                <div class="content">
-                                    <a class="content_link" href="#recruit">
-                                        <span>
-                                            <strong>
-                                                Recruit
-                                            </strong>
-                                        </span>
-                                    </a>
+                            </div>
+                            <div class="content_flexbox_wrap">
+                                <div class="div_flex_content">
+                                    <div class="content">
+                                        <a class="content_link" href="#lecture">
+                                            <span>
+                                                <strong>
+                                                    Lecture
+                                                </strong>
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <a class="content_link" href="#access">
+                                            <span>
+                                                <strong>
+                                                    Access
+                                                </strong>
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <a class="content_link" href="#link">
+                                            <span>
+                                                <strong>
+                                                    Link
+                                                </strong>
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <a class="content_link" href="#recruit">
+                                            <span>
+                                                <strong>
+                                                    Recruit
+                                                </strong>
+                                            </span>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -107,12 +113,6 @@
                 </div>
             </div>
         </header>
-        <div id="hamburger_menu">
-            <input id="menu_check" type="checkbox">
-            <label class="menu_button" for="menu_check">
-                <span></span>
-            </label>
-        </div>
         <div id="main">
             <div id="introduction" class="content_main">
                 <span class="content_name">
@@ -777,5 +777,10 @@
                 Topへ
             </a>
         </div>
+        <script>
+            $('.content a[href]').on('click', function(event) {
+                $('#menu_check').prop('checked', false);
+            });
+        </script>
     </body>
 </html>

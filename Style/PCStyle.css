@@ -122,6 +122,11 @@ footer, #main {
     color: rgb(255, 242, 187);
 }
 
+#hamburger_menu {
+    display: flex;
+    flex: 13 13 calc(100vw - 323rem);
+}
+
 #blank_flexbox {
     flex: 0 0 5rem;
 }
@@ -168,10 +173,12 @@ footer, #main {
     color: rgb(255, 242, 187);
 }
 
-#hamburger_menu {
-    position: fixed;
-    top: 0rem;
-    right: 3rem;
+#menu_check {
+    display: none;
+}
+
+.menu_button {
+    display: none;
 }
 
 .content_main {
