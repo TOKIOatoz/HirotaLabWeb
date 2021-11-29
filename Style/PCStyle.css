@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 html {
+    overflow-x: hidden;
     font-size: 1px;
 }
 
@@ -165,6 +166,12 @@ footer, #main {
 
 .content_link:hover {
     color: rgb(255, 242, 187);
+}
+
+#hamburger_menu {
+    position: fixed;
+    top: 0rem;
+    right: 3rem;
 }
 
 .content_main {
