@@ -778,9 +778,18 @@
             </a>
         </div>
         <script>
-            $('.content a[href]').on('click', function(event) {
-                $('#menu_check').prop('checked', false);
-            });
+            var _checkedFalse = function() {
+                document.getElementById("menu_check").checked = false;
+            };
+            var _autoScroll = function(index) {
+                document.getElementById("research").scrollBy(0, -300);
+            }
+            for (let index = 0; index < 7; index++) {
+                document.getElementsByClassName("content_link")[index].onclick = function() {
+                    _checkedFalse();
+                    _autoScroll(index);
+                };
+            }
         </script>
     </body>
 </html>
