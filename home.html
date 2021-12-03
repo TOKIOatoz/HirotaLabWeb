@@ -109,12 +109,15 @@
                                 </div>
                             </div>
                         </div>
+                        <a id="blank_hamburger_menu" class="content_link"></a>
                     </div>
                 </div>
             </div>
         </header>
         <div id="main">
-            <div id="introduction" class="content_main">
+            <div id="introduction" class="content_anchor">
+            </div>
+            <div class="content_main">
                 <span class="content_name">
                     Introduction&nbsp;紹介
                 </span>
@@ -153,7 +156,9 @@
                     </div>
                 </div>
             </div>
-            <div id="research" class="content_main">
+            <div id="research" class="content_anchor">
+            </div>
+            <div class="content_main">
                 <a class="content_name" href="D:/ドキュメント/GitClone/HirotaLabWeb/contents/research_detail.html" target="_blank">
                     Research&nbsp;研究&nbsp;
                     <span class="content_name_annotation">
@@ -274,7 +279,9 @@
                     </div>
                 </div>
             </div>
-            <div id="member" class="content_main">
+            <div id="member" class="content_anchor">
+            </div>
+            <div class="content_main">
                 <span class="content_name">
                     Member&nbsp;構成員
                 </span>
@@ -564,7 +571,9 @@
                     </figcaption>
                 </figure>
             </div>
-            <div id="lecture" class="content_main">
+            <div id="lecture" class="content_anchor">
+            </div>
+            <div class="content_main">
                 <span class="content_name">
                     Lecture&nbsp;講義
                 </span>
@@ -604,7 +613,9 @@
                     </div>
                 </div>
             </div>
-            <div id="access" class="content_main">
+            <div id="access" class="content_anchor">
+            </div>
+            <div class="content_main">
                 <span class="content_name">
                     Access&nbsp;所在地
                 </span>
@@ -656,7 +667,9 @@
                     </div>
                 </div>
             </div>
-            <div id="link" class="content_main">
+            <div id="link" class="content_anchor">
+            </div>
+            <div class="content_main">
                 <span class="content_name">
                     Link&nbsp;リンク
                 </span>
@@ -783,32 +796,9 @@
             var _checkedFalse = function() {
                 document.getElementById("menu_check").checked = false;
             };
-//            var _autoScroll = function() {
-//                console.log("aaa");
-//                //var _positionY = document.getElementsByClassName("content_main")[index].scrollHeight;
-//                //console.log(_positionY);
-//                window.scroll(0,-100);
-//            }
-//            var _documentMain = document.getElementsByClassName("content_main");
-//            var _documentID;
-//            var _flag;
-//            document.addEventListener("DOMContentLoaded", function() {
-//                for (let index = 0; index < 7; index++) {
-//                    if (("#" + _documentMain[index].getAttribute("id")) == location.hash) {
-//                ///    if (_flag == 1) {
-//                        console.log("bbb");
-//                        _flag = 0;
-//                        _autoScroll();
-//                    }
-//                }
-//            })
-            for (let index = 0; index < 7; index++) {
+            for (let index = 0; index < 8; index++) {
                 document.getElementsByClassName("content_link")[index].onclick = function() {
                     _checkedFalse();
-//                    _documentID = "#" + _documentMain[index].getAttribute("id")
-//                    console.log(_documentID);
-//                    console.log(location.hash);
-//                    _flag = 1;
                 };
             }
         </script>

@@ -97,7 +97,7 @@ footer, #main {
 }
 
 #in_header {
-    width: calc(100% - 10rem);
+    width: calc(100% - 6vw);
     margin-left: 3vw;
     margin-right: 3vw;
 }
@@ -120,7 +120,7 @@ footer, #main {
 .title_en {
     position: fixed;
     top: 0rem;
-    left: 3rem;
+    left: 3vw;
     vertical-align: middle;
     font-size: 40rem;
     color: white;
@@ -160,12 +160,27 @@ footer, #main {
 }
 
 #menu_check:checked ~ #content_menu {
-    width: 100vw;
     position: fixed;
+    width: 100vw;
     top: 61rem;
     left: 0rem;
     background-color: lightseagreen;
     align-items: center;
+    z-index: 10;
+}
+
+#blank_hamburger_menu {
+    position: fixed;
+    right: -100vw;
+}
+
+#menu_check:checked ~ #blank_hamburger_menu {
+    position: fixed;
+    width: 100vw;
+    height: calc(100vh - 350rem);
+    top: 350rem;
+    left: 0rem;
+    z-index: 9;
 }
 
 .content_flexbox_wrap {
@@ -199,10 +214,11 @@ footer, #main {
 
 .menu_button {
     width: 50rem;
-    height: 50rem;
+    height: 49rem;
+    margin-bottom: 1rem;
     position: fixed;
     top: 0rem;
-    right: 3rem;
+    right: 3vw;
     background-color: lightseagreen;
     z-index: 10;
 }
@@ -243,9 +259,13 @@ footer, #main {
     transform: rotate(-45deg);
 }
 
+.content_anchor {
+    padding-top: 60rem;
+    margin-top: -60rem;
+}
+
 .content_main {
     width: calc(100% - 20rem);
-    margin-top: 10rem;
     margin-bottom: 10rem;
     margin-left: auto;
     margin-right: auto;
@@ -355,11 +375,6 @@ footer, #main {
 
 #to_top {
     display: none;
-}
-
-.content_anchor {
-    padding-top: 50rem;
-    margin-top: -50rem;
 }
 
 /* style of research_detail and news */
