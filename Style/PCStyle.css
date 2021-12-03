@@ -48,8 +48,8 @@ img {
 
 video {
     max-width: 480rem;
-    min-width: none;
     max-height: 640rem;
+    min-width: none;
     min-height: none;
 }
 
@@ -181,9 +181,13 @@ footer, #main {
     display: none;
 }
 
+.content_anchor {
+    padding-top: 10rem;
+    margin-top: -10rem;
+}
+
 .content_main {
     width: calc(100% - 20rem);
-    margin-top: 10rem;
     margin-bottom: 10rem;
     margin-left: auto;
     margin-right: auto;
@@ -370,4 +374,8 @@ footer, #main {
     font-size: 12rem;
     margin-bottom: 0rem;
     word-wrap: break-word;
+}
+
+#to_top_in_other_content {
+    display: none;
 }

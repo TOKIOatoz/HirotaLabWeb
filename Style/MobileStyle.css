@@ -54,9 +54,9 @@ img {
 }
 
 video {
-    max-width: 480rem;
+    max-width: calc(100% - 20rem);
+    max-height: calc(100% - 20rem);
     min-width: none;
-    max-height: 640rem;
     min-height: none;
 }
 
@@ -422,4 +422,32 @@ footer, #main {
 .other_content_reference {
     font-size: 12rem;
     margin-bottom: 0rem;
+}
+
+#to_top_in_other_content {
+    position: fixed;
+    bottom: 10rem;
+    left: 10rem;
+    width: 5em;
+    height: 2em;
+    background-color: white;
+    border: 3rem solid lightseagreen;
+    border-radius: 10rem;
+    font-size: 20rem;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+}
+
+#to_top_in_other_content:hover {
+    background-color: lightseagreen;
+}
+
+.to_top_a_in_other_content {
+    display: block;
+    line-height: 2em;
+}
+
+.to_top_a_in_other_content:hover {
+    color: white;
 }
