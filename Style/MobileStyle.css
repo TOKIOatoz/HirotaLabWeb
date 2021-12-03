@@ -357,6 +357,11 @@ footer, #main {
     display: none;
 }
 
+.content_anchor {
+    padding-top: 50rem;
+    margin-top: -50rem;
+}
+
 /* style of research_detail and news */
 .other_content_menu {
     flex: 1 0 450rem;
